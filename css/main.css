@@ -102,35 +102,74 @@ html {
 }
 
 body {
+    background: #f1e2f3;
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
 }
 
-.wrapper {
+.flex-wrapper {
+    flex-flow: row wrap;
+}
+
+.flex-wrapper, .wrapper {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   justify-content: space-between;
   font-weight: 700;
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  align-items: center;
-  background-color: #b3d4fc;
-  border: 4px dashed #9ec4f3;
-  border-radius: 9px;
-  box-sizing: border-box;
-  color: #fff;
-  display: flex;
-  font-size: 1.5em;
-  height: 300px;
-  justify-content: center;
-  line-height: 1em;
-  padding: 10px;
-  width: 30%;
+header, footer, #sub-hdr {
+    background: #C2BBF0;
+    color: #fefdff;
+    width: 100%;
 }
+
+h1 {
+    margin: 1em .5em;
+}
+
+h1 span {
+    color: #f1e2f3;
+    font-size: 1.5em;
+}
+
+#sub-hdr h2 {
+    padding: 1em .5em;
+}
+
+.div-1, .div-2, .div-3 {
+    /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+    align-items: center;
+    /*    border: 4px dashed #C2BBF0;
+
+*/
+    background: #C2BBF0;
+    border: 6px solid #fefdff;
+    box-sizing: border-box;
+    color: #fefdff;
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    line-height: 1em;
+    padding: 15px;
+    width: 30%;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+    footer h3 {
+        margin: 1em .5em;
+    }
+
+    h3 span {
+        color: #f1e2f3;
+        font-size: 1.5em;
+    }
 
 
 
